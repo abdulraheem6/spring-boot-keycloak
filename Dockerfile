@@ -43,11 +43,11 @@ ENV JAVA_HOME /usr/lib/jvm/java8
 ##RUN update-ca-certificates
 
 ##RUN cd /home/ec2-user/.certs \
-    && printf '1' | java InstallCert nexus.com:443 \
-    && printf '1' | sonar.com \
-    && printf '1' | servicenow.com \
-    && printf '1' | jira.com \
-    && cp jssecacerttifcate /$JAVA_HOME/jre/lib/security/
+   ## && printf '1' | java InstallCert nexus.com:443 \
+   ## && printf '1' | sonar.com \
+  ##  && printf '1' | servicenow.com \
+  ##  && printf '1' | jira.com \
+ ##   && cp jssecacerttifcate /$JAVA_HOME/jre/lib/security/
     
 
 
